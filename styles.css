@@ -186,7 +186,7 @@
 
 
 @media screen and (max-width: 576px) {
-    /* Mobile Nav */
+    /* Mobile Navigation */
     .navigation-links{
         display: none;
     }
