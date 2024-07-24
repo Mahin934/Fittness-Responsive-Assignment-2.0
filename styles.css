@@ -23,7 +23,7 @@
     max-width: 1440px;
     min-height: 715px;
     border: 2px solid pink;
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(to bottom, #111111, #333333);
     margin: 0 auto;
 }
 
@@ -184,6 +184,72 @@
     display: none;
 }
 
+/* Habit Section */
+
+.habits{
+    width: 1044px;
+    min-height: 452px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 2px solid darksalmon;
+    color: white;
+}
+
+.habits-container{
+    margin: 0px 198px 58px 198px;
+    flex-direction: column;
+}
+
+.habits-heading{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.habits-pera{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.87rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.habits-image-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.single-images{
+    border: 1px solid palegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-single{
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.habits-image-heading{
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.habits-image-pera{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.87rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
 
 @media screen and (max-width: 576px) {
     /* Mobile Navigation */
@@ -261,6 +327,35 @@
         margin-top: 6px;
     }
 
+    /* Mobile Size Habits */
+
+    .habits{
+        width: 100%;
+        margin: 0;
+        
+    }
+
+    .habits-heading{
+        font-size: 2rem;
+    }
+
+    .habits-image-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px  20px 0px 0px;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+
+    .habits-container{
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 58px;
+    }
+
+    .single-images{
+        margin: 0px 53px 40px 53px;
+    }
 
 
 }
