@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.inter-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background-color: black;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+  /* primary classes */
+
+  .flex-primary{
+    display: flex;
+  }
+/* header section */
+.header-container{
+    max-width: 1440px;
+    min-height: 715px;
+    border: 2px solid pink;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    margin: 0 auto;
+}
+
+.lists-link{
+    list-style-type: none;
+}
+
+.lists-link> a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-right: 47px;
+}
+
+.navigation-header> h3{
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.navigation-header{
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 57px 190px 0px 190px;
+}
+
+.navigation-links{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 12px;
+}
+
+.home-tag{
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    padding: 8px 20px 8px 20px;
+}
+
+/* Banner Part */
+
+.banner-text-container{
+    color: rgb(255, 255, 255);
+    margin-top: 96px;
+}
+
+.banner-heading{
+    color: rgb(255, 255, 255);
+    font-size: 4.87rem;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 28px;
+}
+
+.banner-container{
+    margin: 0 190px;
+    gap: 167px;
+}
+
+#miama{
+    font-family: "Great Vibes", cursive;
+}
+
+.banner-text-container> p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.banner-btn-1{
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+    margin-right: 14px;
+}
+
+.banner-btn-2{
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 16px 40px 16px 40px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    background: none;
+}
+
+.banner-image{
+    margin-top: 32px;
+}
+
+/* Banner Cards */
+
+.banner-card-1{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    right: 375px;
+    top: 263px;
+    padding: 17px 23px 16px 24px;
+}
+
+.banner-card-1> h3 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.banner-card-1> p{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.82rem;
+    font-weight: 400;
+}
+
+.banner-card-2{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    position: absolute;
+    padding: 20px 23px;
+    gap: 12px;
+    top: 550px;
+    right: 690px;
+}
+
+.btn-2-text> h3{
+    color: rgb(250, 250, 249);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.btn-2-text> p{
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+.nav-bar{
+    display: none;
+}
+
+
+@media screen and (max-width: 576px) {
+    /* Mobile Nav */
+    .navigation-links{
+        display: none;
+    }
+
+    .nav-bar{
+        display: block;
+        color: white;
+        font-size: 1.7rem;
+    }
+
+    .navigation-header{
+        margin: 52px  20px 0px 20px;
+    }
+
+    /* Mobile Banner */
+    .banner-heading{
+        font-size: 2.25rem;
+        margin-right: 80px;
+    }
+
+    .banner-container{
+        margin: 51px 20px 0px 20px;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .banner-text-container> p{
+        margin-right: 100px;
+    }
+
+    .banner-text-container{
+        margin-top: 0px;
+    }
+
+    .banner-btn-1, .banner-btn-2{
+        padding: 16px 16px;
+    }
+
+    .banner-card-1{
+        top: 600px;
+        right: 40px;
+        padding: 13px 17px 11px 18px;
+    }
+
+    .banner-card-2{
+        top: 780px;
+        right: 200px;
+        padding: 15px 17px 14px 17px;
+    }
+
+    .banner-card-1> h3 {
+        font-size: 1.89rem;
+    }
+
+    .banner-card-1> p{
+        font-size: 0.61rem;
+    }
+
+    .btn-2-text> h3{
+        font-size: 1.13rem;
+    }
+
+    .btn-2-text> p{
+        font-size: 0.75rem;
+    }
+
+    .circle{
+        width: 30px;
+        height: 30px;
+        background: rgb(230, 83, 60);
+        border-radius: 50%;
+        margin-top: 6px;
+    }
+
+
+
+}
